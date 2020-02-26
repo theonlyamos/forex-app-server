@@ -48,7 +48,7 @@ class Server {
     this.express.use(passport.initialize());
     this.express.use(bodyParser.json());
     this.express.use('/api', routes);    
-    this.express.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
+    this.express.listen(PORT,"0.0.0.0", () => console.log(`Server listening on port ${PORT}!`));
     
     !SocketService.isInitialed && (SocketService.init() || SocketService.run());
     SocketIO.run();
