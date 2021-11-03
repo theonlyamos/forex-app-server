@@ -26,7 +26,7 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "sequelize": "^4.36.1",
-    "validator": "^9.4.1",
+    "validator": "^13.7.0",
     "websocket": "^1.0.25",
     "nodemailer":"*",
     "socket.io": "^2.2.0"
